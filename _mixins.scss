@@ -1,0 +1,11 @@
+@mixin buttonSet{
+    border-radius: 20px;
+
+}
+
+@mixin titoli{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: $testo;
+    font-weight: bold;
+    font-size: xx-large;
+}

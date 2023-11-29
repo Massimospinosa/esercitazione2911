@@ -1,0 +1,94 @@
+@import "spacing";
+@import "colori";
+@import "font";
+@import "mixins";
+@import "animations";
+@import "variabili";
+
+body{
+    color: $testo;
+    background-color: $bgHalfpage;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+header{
+    flex-basis: 100%;
+}
+nav div>img{
+    width: 4vw;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+li{
+    color: $testo;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+main{
+    @include titoli;
+    flex-basis: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#pributton{
+    background-color: $button1;
+    color: $testo;
+}
+#secbutton{
+    background-color: $button2;
+    color: $testo;
+
+}
+#terbutton{
+    background-color: $button3;
+    color: $testo;
+
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out;
+    animation-fill-mode: forwards;
+}
+article{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+article>div{
+    flex-basis: 50%;
+    width: 30%;
+}
+
+aside{
+    margin-top: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+aside>div{
+    flex-basis: 25%;
+   
+}
